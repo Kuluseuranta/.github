@@ -1,1 +1,33 @@
+title: "[Esittely] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kerro, miten käytät Kuluseurantaa: oma automaatio, kategoriat, budjetointitapa tai yrityksen kuluprosessi. Muut voivat oppia siitä.
+
+        **Peitä kuvakaappauksista summat, kauppojen nimet ja henkilötiedot, jos et halua niitä julkisiksi.**
+  - type: dropdown
+    id: tyyppi
+    attributes:
+      label: Mitä esittelet?
+      options:
+        - Automaatio (Pikakomennot, Tasker, MacroDroid)
+        - Kategoriat ja budjetit
+        - Yrityksen kuluprosessi
+        - Vinkki tai työtapa
+        - Muu
+    validations:
+      required: true
+  - type: textarea
+    id: kuvaus
+    attributes:
+      label: Kuvaus
+      description: Mitä teit ja miksi? Kuvat ja vaiheet ovat tervetulleita.
+    validations:
+      required: true
+  - type: textarea
+    id: ohje
+    attributes:
+      label: Miten muut voivat ottaa tämän käyttöön?
+      description: Vaiheet, linkki pikakomentoon tai asetukset.
 
