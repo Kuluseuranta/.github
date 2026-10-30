@@ -1,1 +1,61 @@
-
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kiitos ideasta! Katso ensin [Mitä uutta -sivun tiekartta](https://www.kuluseuranta.com/mita-uutta) ja aiemmat ideat, ettei sama ehdotus ole jo listalla. Jos löydät saman idean, peukuta se.
+  - type: dropdown
+    id: alue
+    attributes:
+      label: Mitä osaa idea koskee?
+      options:
+        - Kulut ja tapahtumat
+        - Kaaviot ja yhteenveto
+        - Budjetit
+        - Kategoriat
+        - Apple-automaatio (iPhone)
+        - Android-automaatio
+        - Selainlaajennus
+        - Yritystili
+        - Tili ja asetukset
+        - Verkkosivu ja ohjeet
+        - Muu
+    validations:
+      required: true
+  - type: dropdown
+    id: tili
+    attributes:
+      label: Kummalle tilille idea sopii?
+      options:
+        - Henkilötili
+        - Yritystili
+        - Molemmille
+    validations:
+      required: true
+  - type: textarea
+    id: ongelma
+    attributes:
+      label: Mikä ongelma tämä ratkaisee?
+      description: Kerro tilanne, jossa nykyinen toiminta ei riitä.
+      placeholder: Haluaisin nähdä esimerkiksi…, mutta nyt joudun…
+    validations:
+      required: true
+  - type: textarea
+    id: ehdotus
+    attributes:
+      label: Ehdotus
+      description: Miten toivoisit sen toimivan? Kuvakaappaukset ja luonnokset auttavat.
+    validations:
+      required: true
+  - type: textarea
+    id: vaihtoehdot
+    attributes:
+      label: Muut vaihtoehdot
+      description: Oletko kokeillut jotain kiertotietä tai muuta ratkaisua?
+  - type: checkboxes
+    id: tarkistus
+    attributes:
+      label: Tarkistus
+      options:
+        - label: Etsin aiemmista ideoista, eikä samaa ehdotusta ole jo tehty.
+          required: true
