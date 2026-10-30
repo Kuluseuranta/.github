@@ -1,1 +1,53 @@
+title: "[Kysymys] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Moni vastaus löytyy jo [usein kysytyistä](https://www.kuluseuranta.com/ukk) ja [tukikeskuksesta](https://www.kuluseuranta.com/tuki).
 
+        **Älä jaa täällä salasanaa, API-tunnistetta, sähköpostiosoitetta tai muita henkilötietoja.** Tiliäsi koskevissa asioissa ota yhteyttä osoitteeseen tuki@kuluseuranta.com. Tietoturvaongelmista ilmoita osoitteeseen security@kuluseuranta.com, älä tänne.
+  - type: dropdown
+    id: aihe
+    attributes:
+      label: Aihe
+      options:
+        - Aloittaminen ja asennus
+        - Apple-automaatio (iPhone)
+        - Android-automaatio
+        - Selainlaajennus
+        - Kulut ja budjetit
+        - Yritystili
+        - Tili, kirjautuminen ja laitteet
+        - Tietosuoja ja tietojen vienti
+        - Muu
+    validations:
+      required: true
+  - type: textarea
+    id: kysymys
+    attributes:
+      label: Kysymys
+      description: Mitä yrität tehdä, ja mitä tapahtuu?
+    validations:
+      required: true
+  - type: dropdown
+    id: alusta
+    attributes:
+      label: Millä käytät Kuluseurantaa?
+      multiple: true
+      options:
+        - iPhone
+        - Android
+        - Mac
+        - Windows
+        - Selainlaajennus
+        - Muu
+  - type: input
+    id: selain
+    attributes:
+      label: Selain tai sovellus
+      placeholder: esim. Safari, kotivalikkoon asennettu sovellus, Chrome
+  - type: textarea
+    id: kokeiltu
+    attributes:
+      label: Mitä olet jo kokeillut?
+      description: Lisää halutessasi kuvakaappaus. Peitä niistä summat ja henkilötiedot.
