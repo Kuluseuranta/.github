@@ -1,1 +1,16 @@
+body:
+  - type: textarea
+    id: tiedote
+    attributes:
+      label: Tiedote
+      description: Mitä on muuttunut, keitä se koskee ja tarvitseeko käyttäjien tehdä jotain?
+      value: |
+        ## Mitä uutta
 
+        ## Keitä tämä koskee
+
+        ## Tarvitseeko sinun tehdä jotain?
+
+        Koko muutosloki: https://www.kuluseuranta.com/mita-uutta
+    validations:
+      required: true
